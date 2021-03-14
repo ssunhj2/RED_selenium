@@ -30,7 +30,7 @@ public class ImageCrawler
             searchEle.sendKeys("cat"); // 검색창에 cat 입력
             searchEle.sendKeys(Keys.RETURN); // 검색창 요소에서 ENTER
 
-            Thread.sleep(3000); // 검색이 완료될 시간을 기다려야 요소를 찾을 수 있다.
+            Thread.sleep(3000); // 검색이 완료될 시간을 기다린다.
 
             List<WebElement> imgList = driver.findElements(By.cssSelector("img.rg_i.Q4LuWd")); // 이미지 목록을 불러온다
 
